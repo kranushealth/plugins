@@ -268,6 +268,11 @@ public class LocalAuthPlugin implements MethodCallHandler, FlutterPlugin, Activi
     if (activity == null || activity.isFinishing()) {
       return biometrics;
     }
+    
+    if (!canAuthenticateWithBiometrics()) {
+            return biometrics;
+    }
+    
     PackageManager packageManager = activity.getPackageManager();
     if (Build.VERSION.SDK_INT >= 23) {
       if (packageManager.hasSystemFeature(PackageManager.FEATURE_FINGERPRINT)) {

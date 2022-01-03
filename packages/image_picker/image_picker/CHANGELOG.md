@@ -1,3 +1,37 @@
+## NEXT
+
+* Updates Android compileSdkVersion to 31.
+* Fix iOS RunnerUITests search paths.
+
+## 0.8.4+4
+
+* Fix typos in README.md.
+
+## 0.8.4+3
+
+* Suppress a unchecked cast build warning.
+
+## 0.8.4+2
+
+* Update minimum Flutter SDK to 2.5 and iOS deployment target to 9.0.
+
+## 0.8.4+1
+
+* Fix README Example for `ImagePickerCache` to cache multiple files.
+
+## 0.8.4
+
+* Update `ImagePickerCache` to cache multiple files.
+
+## 0.8.3+3
+
+* Fix pickImage not returning a value on iOS when dismissing PHPicker sheet by swiping.
+* Updated Android lint settings.
+
+## 0.8.3+2
+
+* Fix using Camera as image source on Android 11+
+
 ## 0.8.3+1
 
 * Fixed README Example.
@@ -26,6 +60,7 @@
 * Fix image picker causing a crash when the cache directory is deleted.
 
 ## 0.8.1+2
+
 * Update the example app to support the multi-image feature.
 
 ## 0.8.1+1
